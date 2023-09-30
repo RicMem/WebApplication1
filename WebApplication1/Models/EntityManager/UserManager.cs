@@ -15,7 +15,7 @@ namespace MyWebApplication.Models.EntityManager
             {
                 //Add checking here if login exists
 
-                SystemUsers newSysUser = new SystemUsers
+                TestUsers newSysUser = new TestUsers
                 {
                     LogInName = user.LoginName,
                     CreatedBy = 1,

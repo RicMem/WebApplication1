@@ -2,7 +2,7 @@
 
 namespace WebApplication1.Models.DB
 {
-    public class SystemUsers
+    public class TestUsers
     {
         [Key]
         public int UserID { get; set; }

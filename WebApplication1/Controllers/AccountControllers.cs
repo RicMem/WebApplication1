@@ -21,7 +21,7 @@ namespace MyWebApplication.Controllers
                 {
                     um.AddUserAccount(user);
                     // FormsAuthentication.SetAuthCookie(user.FirstName, false);
-                    return RedirectToAction("", "Home");
+                    return RedirectToAction("", "Page");
                 }
                 else
                     ModelState.AddModelError("", "Login Name already taken.");

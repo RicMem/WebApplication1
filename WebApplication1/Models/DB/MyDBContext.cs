@@ -16,7 +16,7 @@ namespace MyWebApplication.Models.DB
         }
 
         public virtual DbSet<Users> Users { get; set; }
-        public virtual DbSet<SystemUsers> SystemUsers { get; set; }
+        public virtual DbSet<TestUsers> SystemUsers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -76,9 +76,10 @@ namespace MyWebApplication.Models.DB
 
             });
 
-            modelBuilder.Entity<SystemUsers>(entity =>
+          
+            modelBuilder.Entity<TestUsers>(entity =>
             {
-                entity.ToTable("SYSUser");
+                entity.ToTable("TESTUser");
 
                 entity.Property(e => e.UserID)
                 .HasColumnName("SYSUserID")
